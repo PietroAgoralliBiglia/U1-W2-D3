@@ -161,8 +161,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     case 'red':
       eyeColor.red.push(starWarsCharacters[i]);
       break;
-    case 'blue-gray':
-      eyeColor['blue-gray'].push(starWarsCharacters[i]);
+    case 'blue_gray':
+      eyeColor['blue_gray'].push(starWarsCharacters[i]);
       break;
     default:
       // Gestisci eventuali colori non previsti
