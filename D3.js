@@ -104,7 +104,7 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
-let "charactersNames" = [];
+const "charactersNames" = [];
 
 
 /* ESERCIZIO 2
