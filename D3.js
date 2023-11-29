@@ -104,7 +104,7 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
-const "charactersNames" = [];
+let charactersNames = [];
 
 
 /* ESERCIZIO 2
@@ -116,11 +116,18 @@ const "charactersNames" = [];
 for (let i = 0; i < starWarsCharacters.length; i++) {
   charactersNames.push(starWarsCharacters[i].name);
 }
+console.log('charactersNames', charactersNames)
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
-let "femaleCharacters"=[];
+const femaleCharacters =[];
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender==='female') {
+  charactersNames.push(starWarsCharacters[i].name);}
+}
+
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
@@ -131,7 +138,7 @@ const eyeColor = {
   yellow: [],
   brown: [],
   red: [],
-  'blue-gray': [],
+  blue_gray: [],
 };
 
 /* ESERCIZIO 5
@@ -143,19 +150,19 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 
   switch (character.eye_color) {
     case 'blue':
-      eyeColor.blue.push(character);
+      eyeColor.blue.push(starWarsCharacters[i]);
       break;
     case 'yellow':
-      eyeColor.yellow.push(character);
+      eyeColor.yellow.push(starWarsCharacters[i]);
       break;
     case 'brown':
-      eyeColor.brown.push(character);
+      eyeColor.brown.push(starWarsCharacters[i]);
       break;
     case 'red':
-      eyeColor.red.push(character);
+      eyeColor.red.push(starWarsCharacters[i]);
       break;
     case 'blue-gray':
-      eyeColor['blue-gray'].push(character);
+      eyeColor['blue-gray'].push(starWarsCharacters[i]);
       break;
     default:
       // Gestisci eventuali colori non previsti
